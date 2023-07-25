@@ -1,0 +1,21 @@
+Root, children, leaf, subtree, ancestors.
+
+Full binary tree
+    Every node has 0 or 2 children.
+    No node with one child
+
+Complete binary tree
+    All levels completely filled except last
+    Last level has all nodes to as left as possible
+
+Perfect binary tree
+    All nodes have two children
+    All leaf nodes at same level
+
+Balanced binary tree
+    Height of tree is order logn
+    the depth of the two subtrees of every node never differs by more than one.
+
+Degenerate trees
+    Every parent has only one child node.
+    skewed trees i.e more like a linked list.

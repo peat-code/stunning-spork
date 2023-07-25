@@ -1,0 +1,63 @@
+Traversals
+
+Inorder (l, ROOT, r)    mover =  ^  up
+Think of straight line moving left to right
+
+PreOrder (ROOT,l , r)   mover = -> to right
+
+PostOrder (l, r, ROOT)  mover = <- to left
+
+Inorder, pre, post are DFS traversals.
+
+BFS -> breadth, one level at a time
+
+TC = O(n)  SC = height of tree O(n)
+void preorder(node){
+
+    # base condition
+    if node == NULL
+        return 
+    
+    # deal with node here
+    print node->data
+
+    # go left
+    preoder( node->left )
+
+    # go right
+    preoder ( node->right )
+
+}
+
+void inorder(node){
+
+    # base condition
+    if node == NULL
+        return 
+
+    # go left
+    inorder( node->left )
+    
+    # deal with node here
+    print node->data
+
+    # go right
+    inorder ( node->right )
+
+}
+void postorder(node){
+
+    # base condition
+    if node == NULL
+        return 
+
+    # go left
+    postorder ( node->left )
+
+    # go right
+    postorder ( node->right )
+    
+    # deal with node here
+    print node->data
+
+}
