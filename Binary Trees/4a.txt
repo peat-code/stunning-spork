@@ -10,6 +10,7 @@ PostOrder (l, r, ROOT)  mover = <- to left
 Inorder, pre, post are DFS traversals.
 
 BFS -> breadth, one level at a time
+Level Order Traversal
 
 TC = O(n)  SC = height of tree O(n)
 void preorder(node){
@@ -61,3 +62,14 @@ void postorder(node){
     print node->data
 
 }
+
+BFS
+need queue
+q = []
+while q not empty
+    take size of q here
+    for each i in queue  # go the initial size
+        print i   <- use the node
+        add i->left if not NULL
+        add i->right if not NULL
+
