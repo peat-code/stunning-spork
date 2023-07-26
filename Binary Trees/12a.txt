@@ -1,0 +1,19 @@
+Iterative Postorder Traversal Using 1 Stack
+
+while ( curr != null || !st.isEmpty() ){
+    if (curr != null)
+        st.push(curr)
+        curr = curr->left
+    else
+        temp = st.top()->right
+        if (temp == null)
+            temp = st.top()
+            st.pop()
+            post.add(temp)
+            while(!st.empty && temp == st.top()->right)
+                temp = st.top()
+                st.pop()
+                post.add(temp->val)
+        else    
+            curr = temp
+}
