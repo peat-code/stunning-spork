@@ -1,0 +1,25 @@
+Iterative approach to traversals.
+
+DFS:
+
+
+Iterative preoder:
+    Add root to stack
+    while stack
+        pop element and print
+        push its right child
+        push its left child
+
+Iterative InOrder:
+    Add root to stack
+    while stack
+        pop element and print
+        push its right child
+        push its left child
+
+Iterative PostOrder:
+    Add root to stack
+    while stack
+        pop element and print
+        push its right child
+        push its left child
