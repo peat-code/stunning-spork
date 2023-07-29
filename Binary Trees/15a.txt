@@ -1,0 +1,10 @@
+Check if binary tree is balanced
+
+Naive:
+    Start at root, check height of both left and right, return T/F
+    Move to root.left and then root.right and repeat
+
+Optimal:
+    At every node,return -1 if not balanced,
+    else return max height i.e 1+max(ht(left),ht(right))
+    

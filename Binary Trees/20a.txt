@@ -1,0 +1,25 @@
+Boundary Traversal
+    Get the left boundary excluding leaf.
+    Get the leaf nodes.
+    Get the right boundary bottom up.
+
+
+Left Boundary:
+        if left, go and take left
+        if not left, go and take right
+    untill leaf
+
+Leaf Nodes:
+    Not level order: Because some branch might be shorter.
+    
+    DO:
+        Inorder Traversal.
+            if node==leaf:
+                add
+Right Boundary:
+    Start at root.
+    Use stack.
+        if right, take and go right
+        if not right, take and go left.
+    untill leaf.
+    Pop the stack

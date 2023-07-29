@@ -1,0 +1,16 @@
+Preorder Postorder Inorder Together
+
+
+maintain a stack 
+(node,num) 
+
+if num == 1
+    Preorder
+    + +
+    left
+if num == 2
+    Inorder
+    + +
+    right
+if num == 3
+    Postorder
