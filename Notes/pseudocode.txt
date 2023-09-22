@@ -1,0 +1,25 @@
+
+######### BFS ############
+queue = []
+visited = set()
+while queue:
+	me = queue.popleft()
+	for every neighbor of me:
+		if neighbor not in visited:
+			visited.add(neighbor)
+			queue.append(neighbor)
+
+In BFS, the order of looping the neighbors should never affect the answer.
+BFS should find the shortest path regardless of how you iterate your neighbors.
+
+######### Modified BFS #############
+close to what Dijkstra does.
+queue = []
+cost = {} # dictionary, instead of a set
+while queue:
+	me = queue.popleft()
+	for every neighbor of me:
+		new_cost = compute_cost()
+		if new_cost < cost[neighbor]: # better path!
+			cost[neighbor] = new_cost
+			queue.append(neighbor)
